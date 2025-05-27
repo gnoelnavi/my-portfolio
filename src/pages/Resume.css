@@ -1,0 +1,25 @@
+.resume-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.download-button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.75rem 1.5 rem;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.downlaod-button:hover {
+    background-color: #111827;
+}
+
+.resume-iframe {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

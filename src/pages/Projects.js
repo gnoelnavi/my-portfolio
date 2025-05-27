@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css';
+import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -22,10 +23,21 @@ const Projects = () => {
             <h1>Projects</h1>
             <div className="project-list">
                 {projects.map((project, index) => (
-                <div className="project-card" key={index}>
-                    <h2>{project.title}</h2>
-                    <p>{project.description}</p>
-            </div>
+                    <a
+                        key ={index}
+                        href = {project.github}
+                        target ="_blank"
+                        rel = "noopener noreferrer"
+                       className = "project-card-link"
+                    >
+                        <div className="project-card" key={index}>
+                            <h2>{project.title}</h2>
+                            <p>{project.description}</p>
+                            <div className="github-icon">
+                                <FaGithub size={24} />
+                            </div>            
+                        </div>
+                    </a>
             ))}
         </div>
         </div>
